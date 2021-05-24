@@ -42,7 +42,10 @@ a:hover{
 a:active{
     color: #ff6a3b;
 }
-
+img{
+    max-width: 100%;
+    height: auto;
+}
 .logo {
     margin: 50px 0 40px 0;
     line-height: 0;
@@ -105,4 +108,125 @@ padding: 0 1em 1em 0;
 
 .clear{
     clear:both;
+}
+
+.info{
+    border-collapse: collapse;
+}
+
+.info th, .info td{
+    padding: 8px;
+    border: 1px solid #bec2c7;
+    text-align: left;
+}
+
+.info th{
+    background-color:#dde2ea;
+    width:90px;
+    color:#3f5170;
+    vertical-align: top;
+}
+
+.menu-item{
+    display:flex;
+    border-bottom: 1px dashed #bec2c7;
+    padding: 20px 8px
+}
+
+.menu-photo{
+    margin-right: 16px;
+    flex: 1 1 auto;
+}
+
+.menu-text{
+    flex: 0 0 336px;
+
+}
+
+.map{
+    text-align: center;
+}
+
+/* content.html */
+form div.html{
+    padding: 12px;
+    border-bottom: 1px dashed #bec2c7;
+
+}
+
+select{
+    width:30em;
+
+}
+input[name="subject"]{
+    width: 30em;
+}
+
+textarea{
+    width:30em;
+    height: 6em;
+
+}
+
+input[type="submit"]{
+    margin:20px 0;
+    width:30em;
+}
+
+.form{
+    text-align:center;
+}
+/* スマートフォン向けCSS */
+@media (max-width:767px){
+    /* 全体-ナビゲーション- */
+    .wrapper{
+        margin :0 8px;
+    }
+
+    .logo{
+        margin: 30px 0;
+
+    }
+    .logo img{
+        width:200px;
+    }
+
+    .nav{
+        background-color:#dfddda;
+
+    }
+    .nav li{
+        display:block;
+    }
+    /* menu.html */
+    .menu-item{
+        display: block;
+
+    }
+    .menu-photo{
+        margin-right: 0;
+        width:100%;
+    }
+    .menu-text{
+        width:100%;
+    }
+    /* about.html */
+    .shop-photo{
+        padding-right: 0;
+    }
+    /* contact.html */
+    select{
+        width:100%;
+
+    }
+    input[name="subject"]{
+        width:100%;
+    }
+    textarea{
+        width:100%;
+    }
+    input[type="submit"]{
+        margin:20px 0;
+        width:100%;
+    }
 }
